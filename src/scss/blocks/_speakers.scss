@@ -1,0 +1,46 @@
+.speakers {
+  padding: 72px 30px 80px 30px;
+  background-color: var(--white);
+  @media (max-width: 990px) {
+    padding: 27px 30px 27px 30px;
+  }
+  &-wrapper {
+    position: relative;
+    margin: 50px 0;
+    @media (max-width: 990px) {
+      margin: 42px 0 64px 0;
+    }
+  }
+  .slider-pagination {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    max-width: 552px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    @media (max-width: 990px) {
+      bottom: -64px;
+    }
+    &__item {
+      width: 13px;
+      height: 13px;
+      border-radius: 100%;
+      background-color: var(--gray_light);
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--blue);
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -50px;
+  }
+}

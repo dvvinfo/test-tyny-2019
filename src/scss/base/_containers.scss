@@ -1,0 +1,12 @@
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+.slider-container {
+  max-width: var(--container-width-slider);
+  margin: 0 auto;
+  padding: 50px 0;
+  @media (max-width: 990px) {
+    padding: 0;
+  }
+}

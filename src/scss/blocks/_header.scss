@@ -1,0 +1,125 @@
+.header {
+  background-color: var(--white);
+  padding: 16px 50px;
+  position: relative;
+  &__content {
+    display: flex;
+    align-items: center;
+    @media (max-width: 990px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 16px 30px;
+  }
+  @media (max-width: 990px) {
+    padding: 16px 27px;
+  }
+  @media (max-width: 640px) {
+    padding: 16px 20px;
+  }
+}
+.logo {
+  padding-right: 24px;
+  border-right: 1px solid var(--gray);
+  color: var(--blue);
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  @media (max-width: 1200px) {
+    padding-right: 14px;
+    font-size: 25px;
+  }
+  @media (max-width: 990px) {
+    border-right: none;
+    padding-right: 0;
+    font-size: 29px;
+  }
+}
+.login {
+  margin: 0 24px;
+  @media (max-width: 990px) {
+    margin: 21px 0 35px 0;
+  }
+}
+.btn-white {
+  padding: 8px 32px;
+  background-color: var(--white);
+  border: 1px solid var(--light_blue);
+  color: var(--light_blue);
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  &:hover {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+  }
+  @media (max-width: 990px) {
+    font-size: 22px;
+  }
+}
+.contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  @media (max-width: 990px) {
+    margin-left: 0;
+  }
+
+  gap: 13px;
+  &__btn {
+    display: flex;
+    align-items: center;
+    height: 26px;
+  }
+  &__link {
+    height: 100%;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  @media (max-width: 990px) {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 47px 0 40px 0;
+    background-color: var(--white);
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+  }
+}
+.btn-menu {
+  display: none;
+  width: 25px;
+  position: absolute;
+  right: 20px;
+  z-index: 3;
+  @media (max-width: 990px) {
+    display: block;
+  }
+}
+.btn-menu-close {
+  display: none;
+  width: 20px;
+  position: absolute;
+  right: 22px;
+  z-index: 3;
+}
+.open-menu {
+  transform: translateX(0);
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}

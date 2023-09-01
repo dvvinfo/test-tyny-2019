@@ -1,0 +1,32 @@
+.nav {
+  @media (max-width: 990px) {
+    width: 100%;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 0 24px;
+    @media (max-width: 1200px) {
+      gap: 24px;
+      padding: 0 14px;
+    }
+    @media (max-width: 990px) {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0;
+    }
+  }
+  &__link {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--blue);
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--light_blue);
+    }
+    @media (max-width: 990px) {
+      font-size: 22px;
+    }
+  }
+}
