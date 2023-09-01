@@ -14,6 +14,7 @@ function nav() {
 		menu.classList.remove('open-menu');
 		btnMenu.classList.remove('d-none')
 	};
+
 }
 
 export default nav;
