@@ -23,6 +23,16 @@
       justify-content: space-between;
       gap: 26px;
       margin-bottom: 28px;
+      &__error{
+        background-color: #fff;
+        padding: 5px;
+        font-size: 16px;
+        outline: 3px solid #fb5555;
+        color: #fb5555;
+        position: absolute;
+        left: 0;
+        top: -40px;
+      }
       @media (max-width: 500px) {
         flex-direction: column;
       }
@@ -82,7 +92,10 @@
       }
     }
     &-error {
-      outline: 3px solid #fb5555;
+      outline: 3px solid var(--red);
+      &::placeholder{
+        color: var(--red);
+      }
     }
   }
   &-footer {
